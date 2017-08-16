@@ -41,10 +41,13 @@ $(document).ready(function() {
 		displayQuestions();	
 	});
 
-	// initializing function, brings up all the questions and starts clock
+	// initializing function, brings up all the questions and starts clock.
+	//it also should show all the questions as they appear, since they should not be there before the "start button" is clicked
+
 	function startGame() {
 		countDown();
 		showCountdown();
+		//displayQuestions();
 	};
 
 	// Countdown function
@@ -56,6 +59,7 @@ $(document).ready(function() {
 	};
 
 	// function that shows the countdown
+	// the timer should stop running at 0 and the user would be able to hit the "reset button" to start the quiz over
 	function showCountdown(){
 		seconds--;
 		$('#timer').html('<h3>Time Remaining: ' + seconds + '</h3>');
@@ -65,7 +69,10 @@ $(document).ready(function() {
 			}	
 	};
 
-	// this function will show the questions
+	// this function will show the questions. 
+	// Its supposed to grab the "question" portion of the questions array, then show them in the questionsListed div when the startGame(); is triggered. 
+	// Then, it is supposed to grab the answers in the "answers" array.
+
 	function displayQuestions() {
 		var showQuestions;
 		for(var i = 0; i < showQuestions(questions[i].length()); i++) {
@@ -73,7 +80,11 @@ $(document).ready(function() {
 		}
 	};
 
-	// 
+	//Here is supposed to be a function that allows the user to select an answer.
+	//It the pulls the "answer" from the questions array and compares it to what answer was selected by the user.
+	
+	//Here is supposed to be a function that displays how many questions the user got correct out of the total number of questions.
+	//this would display after the user finishes all the questions or the timer reaches 0.
 
 
 	// reset function
