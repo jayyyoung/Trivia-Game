@@ -1,0 +1,57 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<head>
+  		<meta charset="UTF-8">
+  		<title>Pulp Fiction Trivia</title>
+  		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lusitana" rel="stylesheet">
+  		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<!-- title -->
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
+					<div class="headPlate panel panel-default">
+						<h1>Pulp Fiction Trivia</h1>
+					</div>
+				</div>	
+			</div>
+			<!-- timer/game start -->
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
+					<div class="panel panel-default">
+						<div id="timer"></div>
+						<button type="button" class="btn btn-success" id="startButton">Start</button>
+					</div>
+				</div>	
+			</div>
+			<!-- questions -->
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
+					<div class="panel panel-default" id="questionsListed">
+						<h2>questions</h2>
+					</div>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-xs-3 col-xs-offset-3">
+					<div class="panel panel-default">
+						<button type="button" class="btn btn-danger" id="resetButton">Restart</button>
+					</div>
+				</div>	
+				<div class="col-xs-3">
+					<div class="panel panel-default">
+						<div id="answersCorrect"><h2>questions correct</h2></div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="assets/javascript/app.js">
+		</script>
+	</body>
+</html>
